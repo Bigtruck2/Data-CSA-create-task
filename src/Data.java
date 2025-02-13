@@ -30,9 +30,9 @@ public class Data
     { /* to be implemented in part (b) */
         //row col
         int count = 0;
-        for(int j = 0; j<grid[0].length;j++) {
-            for(int i = 0; i<grid.length-1;i++){
-                if(grid[j][i]<=grid[j][i+1]) return count;
+        for(int i = 0; i<grid.length;i++){
+            for(int j = 0; j<grid[0].length-1;j++) {
+                if(grid[j][i]<=grid[j+1][i]) return count;
             }
             count++;
         }
